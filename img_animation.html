@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMG animation</title>
+    <style>
+        .swing{
+            display:inline-block;
+            animation: swingAnimation 4s infinite;
+            transform-origin: top; 
+        }
+        .swing img{
+            height: 550px;
+            width: 400px;
+            border: 7px solid gray;
+            box-shadow: 0px;
+            
+
+        }
+        @keyframes swingAnimation{
+         0% { transform: rotate(0deg); }
+         25% { transform: rotate(30deg); }
+         50% { transform: rotate(0deg); }
+         75% { transform: rotate(-30deg); }
+         100% { transform: rotate(0deg); }
+       }
+        
+        
+    </style>
+</head>
+<body>
+     <div class="swing">
+        <img src="images/img3.jpg" alt="fort">
+    </div>
+    
+</body>
+</html>
