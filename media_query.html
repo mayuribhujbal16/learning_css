@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        /*Media queries*/
+
+        /*Media queriy for mobile*/
+        @media(min-width:320px) and (max-width:767px){
+            body{
+                font-size: 20px;
+                background: pink;
+            }
+            p{
+                display: none;
+            }
+            h1,h3{
+                color: black;
+                text-shadow:10px  color(gray);
+
+            }
+            .img1{
+                display: inline-flex;
+                height:250px;
+                width:350px;
+            }
+        }
+        /*For Tablets iPads*/
+        @media(min-width:767px) and (max-width:850px){
+            body{
+                font-size: 20px;
+                background: brown;
+            }
+            p{
+                display: contents;
+            }
+            h1,h3{
+                color: burlywood;
+                text-shadow:10px  color(gray);
+            }
+             .img1{
+                display: flex;
+                height:250px;
+                width:300px;
+        }
+    }
+        @media (min-width: 850px) and (max-width:950px){
+            body{
+                background-color: darkorange;
+            }
+            h1,h3{
+                color: black;
+                font-size: 100px;
+            }
+            .img1{
+                display: none;
+            }
+        }
+        /*For Desktop Laptops*/
+        @media(min-width:950px) and (max-width:1224px){
+            body{
+                font-size: 20px;
+                background: red;
+            }
+            p{
+                display: contents;
+            }
+            h1,h3{
+                color: white;
+                text-shadow:10px  color(gray);
+            }
+             .img1{
+                display: flex;
+                height:250px;
+                width:300px;
+        }
+    }
+        /*For Desktop Laptops*/
+        @media(min-width:1224px) and (max-width:1824px){
+            body{
+                font-size: 20px;
+                background: red;
+            }
+            p{
+                display: contents;
+            }
+            h1,h3{
+                color: white;
+                text-shadow:10px  color(gray);
+            }
+             .img1{
+                display: flex;
+                height:250px;
+                width:300px;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Media Query</h1>
+    <p>The background will change according viewport width change</p>
+    <img class="img1" src="images/img2.jpg" alt="korigad fort" height="250px" width="350px">
+
+    <h3>Smartphone - <span class="details">from 320px and up</span>(min-width:320px)</h3>
+    <p>Blue</p>
+    <br>
+
+    <h3>Tablets,iPads (portrait) - <span class="details">from 768px ans up</span>(min-width:768px)</h3>
+    <p>GReen</p>
+    <br>
+
+    <h3>tablets, iPads(landscape) - <span class="details">from 1024px and up</span>(min-width:1024px)</h3>
+    <p>Yellow</p>
+    <br>
+
+    <h3>Desktops and laptops - <span class="details">from 1224px and up</span>(min-width:1224px)</h3>
+    <p>Orange</p>
+    <br>
+
+    <h3>Large Screens - <span class="details">from 1824px and up</span>(min-width:1824px)</h3>
+    <p>Aqua(zoom out if needed[Ctrl & -])</p>
+    <br>
+
+    <h3>custom media query - <span class="details">from 850px and up,until 950px</span>(min-width:950px)</h3>
+    <p>purple(zoom out if needed [Ctrl & -])</p>
+    <br>
+</body>
+</html>

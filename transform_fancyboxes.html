@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSFORM BOXES</title>
+    <style>
+      body {
+      background: #f0f0f0;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+    }
+
+    .container {
+      display: flex;
+      gap: 40px;
+    }
+    .card {
+      width: 200px;
+      height: 200px;
+      perspective: 1000px;
+      top: 100PX;
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      transition: transform 2s;
+      transform-style: preserve-3d;
+        top: 100PX;
+    }
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front, .card-back {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      backface-visibility: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      color: white;
+      border-radius: 10px;
+        top: 100PX;
+    }
+    .card-front {
+      background-color: #ff6f61; 
+    }
+
+    .card-back {
+      background-color: #4a90e2; 
+      transform: rotateY(180deg); 
+    }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Hellooo Jii</div>
+            <div class="card-back">Welcomeee</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Hellooo Jii</div>
+            <div class="card-back">Welcomeee</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Hii</div>
+            <div class="card-back">Beautiful</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Welcome To</div>
+            <div class="card-back">FCT</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
